@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+nav{
+    background: #333;
+    border: 1px solid red;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 70px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    flex: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menu-items{
+    display: inline-flex;
+    padding: 20px;
+}
+
+nav .menu-items a{
+    text-decoration: none;
+    color: #ffffff91;
+    padding: 15px 25px;
+    font-size: 18px;
+    transition: all .4s ease;
+}
+
+
+nav .menu-items a:hover{
+    color: #fff;
+}
+
+
+nav .search-bar{
+    border: 1px solid #ffffff91;
+    display: flex;
+    border-radius: 50px;
+    height: 50px;  
+    padding: .2em; 
+    width: 350px;
+    position: relative;
+}
+
+nav .search-bar input{
+    width: 100%;
+    font-size: 17px;
+    padding: 0 40px 0 15px;
+    color: #fff;
+    border: none;
+    background: transparent;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    outline: none;
+    position: absolute;
+    line-height: 50px;
+}
+
+nav .search-bar .submit{   
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: #ffffff91;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    margin-left: auto;
+    z-index: 1;
+}
+
+nav .search-bar .submit:hover{   
+    color: #fff;
+    transition: all .4s ease;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    color: #555;
+}
+
+
+
+@media (max-width:1030px){
+
+    nav .logo{
+        font-size: 20px;
+    } 
+    nav .search-bar{
+        width: 270px;
+    }
+
+@media (max-width:950px){
+
+    nav .logo{
+        font-size: 20px; 
+    }
+    
+    nav .menu-items a{
+        padding: 15px 15px;
+    }
+    
+}
+
+@media (max-width:860px){
+    
+    nav .logo{
+        flex: none;
+        width: 100%;
+        margin-right: auto;
+        padding: 15px 0;
+        font-size: 25px;
+    }
+
+    nav .search-bar{
+        position: absolute;
+        top: 15px;
+    }
+    
+}
+
+@media (max-width:600px){
+
+    nav .logo{
+        text-align: center;
+    }
+
+    nav .search-bar{
+        top: 80px;
+        width: 200px;
+    }
+
+    nav .menu-items{
+        margin-top: 50px;
+        display: block;        
+    }
+
+    nav .menu-items a{        
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    
+}
+
+}
+
+
+
+
+
+
